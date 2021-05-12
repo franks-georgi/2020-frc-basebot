@@ -41,6 +41,8 @@ public class TeleopModeLogic extends AbstractModeLogic {
 //				return !fSharedInputValues.getBoolean("ipb_example_has_been_zeroed");
 			case "st_example":
 				return fSharedInputValues.getBooleanRisingEdge("ipb_operator_right_trigger");
+			case "st_drivetrain":
+				return true;
 			default:
 				return false;
 		}

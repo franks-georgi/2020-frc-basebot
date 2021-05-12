@@ -3,6 +3,21 @@ talon:
     device_number: 5
     inverted: true
 
+  opn_drivetrain_left_bottom:
+    device_number: 0
+    inverted: true
+
+  opn_drivetrain_left_top:
+    device_number: 1
+    inverted: true
+
+  opn_drivetrain_right_bottom:
+    device_number: 14
+
+  opn_drivetrain_right_top:
+    device_number: 15
+
+
 #  opn_drivetrain_left_primary:
 #    device_number: 0
 #    inverted: true
@@ -86,3 +101,11 @@ talon:
 #  opn_drivetrain_right:
 #    master: opn_drivetrain_right_primary
 #    followers: [opn_drivetrain_right_follower_1]
+
+motor_group:
+  opn_drivetrain_left:
+    master: opn_drivetrain_left_bottom
+    followers: [opn_drivetrain_left_top]
+  opn_drivetrain_right:
+    master: opn_drivetrain_right_bottom
+    followers: [opn_drivetrain_right_top]
